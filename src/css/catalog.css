@@ -1,2 +1,29 @@
 .catalog {
 }
+.container {
+}
+.catalog-title {
+}
+.container-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+}
+.container-item {
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  max-width: 335px;
+  height: 364px;
+}
+.catalog-picture {
+  background-color: #f3f3f3;
+}
+.product-name {
+}
+.item-catalog-price {
+}
+.showmore-catalog-btn {
+}
