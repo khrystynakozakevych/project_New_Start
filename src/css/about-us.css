@@ -1,0 +1,116 @@
+
+.container {
+}
+.about-us {
+    margin-top: 60px;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.about-us-content {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    border-radius: 30px;
+    width: 335px;
+    background: #f3f3f3;
+
+}
+.about-us-subtitle {
+    margin-bottom: 28px;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+}
+.about-us-list {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.7);
+}
+.about-us-item {
+}
+.about-us-lead {
+}
+.about-us-btn{
+    margin-top: 40px;
+    width: 160px;
+    height: 48px;
+    border-radius: 16px;
+    background-color: #3350e9;
+    border: none;
+}
+
+.about-us-btn:hover,
+.about-us-btn:focus {
+    background-color: #1f3cd4;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-us-link {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    text-align: center;
+color: #fbfbfb;
+}
+.about-us-img {
+}
+@media screen and (min-width: 768px) {
+    .about-us {
+        margin-top: 80px;
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .about-us-content {
+        padding-top: 80px;
+        padding-left: 60px;
+        padding-bottom: 80px;
+        padding-right: 60px;
+        border-radius: 50px;
+        width: 704px;
+    }
+    .about-us-subtitle {
+        margin-bottom: 40px;
+        font-size: 48px;
+        line-height: 92%;
+    }
+    .about-us-list {
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        line-height: 125%;
+    }
+    .about-us-btn {
+        margin-top: 60px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .about-us {
+        margin-top: 100px;
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .about-us-content {
+        width: 580px;
+    }
+    
+
+}
