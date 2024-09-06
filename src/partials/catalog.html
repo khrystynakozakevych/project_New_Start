@@ -1,11 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="catalog">Hello world!</div>
-  </body>
-</html>
+<section class="catalog">
+  <div class="container">
+    <h2 class="catalog-title">Catalog</h2>
+    <ul class="container-list">
+      <li class="container-item">
+        <img
+          src="./src/img/catalog/fenix7x/fenix7x-desc.jpg"
+          alt=""
+          width="500"
+          height="600"
+        />
+        <picture>
+          <source
+            srcset="
+              ./src\img\catalog\fenix7x\fenix7x-desc.jpg    1x,
+              ./src\img\catalog\fenix7x\fenix7x-desc-2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./src\img\catalog\fenix7x\fenix7x-tab.jpg    1x,
+              ./src\img\catalog\fenix7x\fenix7x-tab-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./src\img\catalog\fenix7x\fenix7x-mob.jpg    1x,
+              ./src\img\catalog\fenix7x\fenix7x-mob-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="../src\img\catalog\fenix7x\fenix7x-mob.jpg"
+            alt="Garmin Fenix 7X Pro"
+          />
+        </picture>
+        <p class="product-name">Garmin Fenix 7X Pro Sapphire Solar</p>
+        <p class="item-catalog-price">€500</p>
+      </li>
+      <li class="container-item">
+        <p class="product-name">Garmin D2 Delta PX</p>
+        <p class="item-catalog-price">€380</p>
+      </li>
+      <li class="container-item">
+        <p class="product-name">Garmin Marq Athlete</p>
+        <p class="item-catalog-price">€450</p>
+      </li>
+      <li class="container-item">
+        <p class="product-name">Garmin Descent MK1</p>
+        <p class="item-catalog-price">€680</p>
+      </li>
+      <li class="container-item">
+        <p class="product-name">Garmin Fenix 6 Pro Solar</p>
+        <p class="item-catalog-price">€400</p>
+      </li>
+      <li class="container-item">
+        <p class="product-name">Tube Watch S42 Date Steel With Black Case</p>
+        <p class="item-catalog-price">€395</p>
+      </li>
+
+      <button class="showmore-catalog-btn" type="button"></button>
+    </ul>
+  </div>
+</section>
