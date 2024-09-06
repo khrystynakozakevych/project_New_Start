@@ -7,15 +7,15 @@ a {
 }
 
 .container-footer {
-  background-color: #0c0c0c;
-  color: #fbfbfb;
-  margin: 20px;
-  padding: 40px 28px 28px 28px;
-  border-radius: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background-color: #0c0c0c;
+  color: #fbfbfb;
+  margin: 20px;
+  border-radius: 30px;
+  padding: 40px 28px 28px 28px;
 }
 
 .footer-logo {
@@ -78,6 +78,11 @@ a {
 }
 
 .footer-navigation {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  gap: 49px;
+  display: flex;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.33;
