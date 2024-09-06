@@ -1,1 +1,151 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;     дефолтні налаштування є в .container i modern-normalize
+} */
 
+a {
+  text-decoration: none;
+}
+
+.footer {
+  /* background-color: #0c0c0c;
+  color: #fbfbfb; */
+  /* margin: 20px;  переставити на footer-container*/
+  margin: 60px 20px 20px;
+  /* padding: 40px 28px 28px;    
+  /* border-radius: 30px; переставити на footer-container */
+  /* padding-left: 28px;   зайве*/ 
+}
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #0c0c0c;
+  color: #fbfbfb;
+  border-radius: 30px;
+  padding: 40px 28px 28px;
+}
+
+.footer-logo {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-socials-list {
+  list-style: none;
+  display: flex;
+}
+
+.footer-socials-item {
+  margin-right: 15px;
+}
+
+.footer-socials-icons {
+  fill: rgba(251, 251, 251, 0.5);
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+}
+
+.footer-socials-icons:hover,
+.footer-socials-icons:active {
+  fill: #fbfbfb;
+}
+
+.footer-contact {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33333;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  padding: 14px 20px;
+
+  margin-top: 20px;
+}
+
+.footer-text {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 92px;
+}
+
+.footer-navigation {
+  /* font-family: 'Gilroy', sans-serif; це є в дефолтних стиоях */
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;  /* заокруглюй до сотих завжди */
+  /* text-align: center;  не треба, бо збиває розташуваття адресу*/
+  gap: 49px;   /* column-gap: 16px треба ставити на ul.footer-nav-list */
+  /* margin-bottom: 24px;  бо є вже margin-top: 24px; в .footer-info */
+  display: flex;
+  /* flex-direction: row;   зайве, бо це і так дефолтне значення */
+  /* margin-left: 28px;
+  margin-right: 28px;    непотрібні*/
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  column-gap: 16px; /* щоб list-items відділялися добре */
+  row-gap: 8px;
+}
+
+/* .footer-nav-list-item {
+  /* margin-right: 16px; не треба, бо є column-gap*/
+  /* margin-bottom: 8px; 
+} */
+
+.footer-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* gap: 8px;   не треба, бо є .footer-privacy padding-top: 8px; */
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.footer-privacy {
+  padding-top: 8px;
+}
+
+.terms {
+  margin-right: 20px; /* на макеті 20px, не 24 */
+}
+
+/* @media (min-width: 375px) {
+  .container-footer {
+    padding: 0 32px;
+  }
+} */
+
+/* щось наче зробила, але воно неправильне і я правда не розумію що не так
+буду дуже вдячна, якщо допоможеш))*/
