@@ -1,105 +1,73 @@
-<div class="contact-us">
-  <div class="contact-us-header">
+<section class="contact-us">
+  <div class="contact-us container">
     <h2 class="form-title">Contact Us</h2>
-  </div>
-  <div class="contact-us-content">
-    <form>
-      <div class="form-block">
-        <p class="form-description">
-          Please use the form below to contact us. Enter your name, email,
-          phone, and message and we'll get back to you shortly.
-        </p>
-        <div class="form-wrapper-cont">
-          <label class="form-label" for="user-name">Name</label>
-          <div class="cont-input">
-            <input
-              class="input"
-              type="text"
-              id="user-name"
-              name="user-name"
-              required
-              placeholder="Name"
-            />
-          </div>
-        </div>
-        <div class="form-wrapper-cont">
-          <label class="form-label" for="user-phone">Phone</label>
-          <div class="cont-input">
-            <input
-              class="input"
-              type="tel"
-              id="user-phone"
-              required
-              name="user-phone"
-              placeholder="Phone"
-            />
-          </div>
-        </div>
-        <div class="form-wrapper-cont">
-          <label class="form-label" for="user-email">Email</label>
-          <div class="cont-input">
-            <input
-              class="input"
-              type="email"
-              id="user-email"
-              required
-              name="user-email"
-              placeholder="Email"
-            />
-          </div>
-        </div>
-        <!-- textarea -->
-        <div class="form-wrapper-cont-comment">
-          <label class="form-label" for="user-comment">Comment</label>
-          <textarea
-            class="textarea"
-            id="user-comment"
-            name="user-comment"
-            placeholder="Comment"
-          ></textarea>
-        </div>
-        <button type="submit" class="submit-contact-us">Send</button>
-      </div>
-    </form>
 
-    <div class="img-block">
-      <picture>
-        <!-- Мобільна версія -->
-        <source
-          srcset="
-            ../img/contact-us/contact-us-watch-mob.jpg,
-            ../img/contact-us/contact-us-watch-mob-2x.jpg 2x
-          "
-          media="(max-width: 600px)"
-          width="335px"
-          height="512px"
-        />
 
-        <!-- Планшетна версія -->
-        <source
-          srcset="
-            ../img/contact-us/contact-us-watch-tab.jpg,
-            ../img/contact-us/contact-us-watch-tab-2x.jpg 2x
-          "
-          media="(max-width: 1024px)"
-          width="704px"
-          height="556px"
-        />
-        <!-- Десктопна версія -->
-        <source
-          srcset="
-            ../img/contact-us/contact-us-watch-desc.jpg,
-            ../img/contact-us/contact-us-watch-desc-2x.jpg 2x
-          "
-          width="530px"
-          height="556px"
-        />
-        <img
-          class="contact-section-image"
-          src="../img/contact-us/contact-us-watch-desc.jpg"
-          alt="watch"
-        />
-      </picture>
+    <div class="contact-us-content">
+          <div class="form-block">
+                   <p class="form-description">
+                  Please use the form below to contact us. Enter your name, email,
+                  phone, and message and we'll get back to you shortly.
+                  </p>
+
+
+                <form>
+                      <label class="form-label" for="user-name">Name</label>
+                    
+                      <input class="input" type="text" id="user-name" name="user-name" required placeholder="Name" />
+
+                      
+                    <label class="form-label" for="user-email">Email</label>
+                    
+                    <input class="input" type="email" id="user-email" required name="user-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email" />
+                
+                    
+                
+          
+                    <label class="form-label" for="user-phone">Phone</label>
+                    
+                      <input class="input" type="tel" id="user-phone" required name="user-phone" pattern="^\+380\s\d{3}\s\d{3}\s\d{2}\s\d{2}$"  placeholder="+380" />
+                    
+                  <!-- textarea -->
+                  
+                    <label class="form-label" for="user-comment">Comment</label>
+                    <textarea class="textarea" id="user-comment" name="user-comment" placeholder="Comment"></textarea>
+                
+                  <button type="submit" class="submit-contact-us">Send</button>
+            
+                </form>
+            </div>
+          
+
+
+
+            <div class="img-block">
+              <picture>
+                  <!-- Десктопна версія -->
+                  <source srcset="
+                          ../img/contact-us/contact-us-watch-desc.jpg,
+                          ../img/contact-us/contact-us-watch-desc-2x.jpg 2x
+                        " media="(min-width: 1280px)" />
+          
+                  <!-- Планшетна версія -->
+                  <source srcset="
+                          ../img/contact-us/contact-us-watch-tab.jpg,
+                          ../img/contact-us/contact-us-watch-tab-2x.jpg 2x
+                        " media="(min-width: 768px) and (max-width: 1279px)" />
+          
+                  <!-- Мобільна версія -->
+                  <source srcset="
+                          ../img/contact-us/contact-us-watch-mob.jpg,
+                          ../img/contact-us/contact-us-watch-mob-2x.jpg 2x
+                        " media="(max-width: 767px)" />
+          
+                  <!-- Зображення за замовчуванням -->
+                  <img class="contact-section-image" 
+                       src="../img/contact-us/contact-us-watch-desc.jpg" alt="watch" />
+              </picture>
+          </div>
+          
+
     </div>
-  </div>
-</div>
+ </div>
+</section>
