@@ -71,7 +71,7 @@
 /* media tablet ---------------------------------*/
 @media only screen and (min-width: 768px) {
   .catalog-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 344px);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 32px;
@@ -85,6 +85,9 @@
   .product-name {
     font-size: 20px;
     line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 /* media desktop ---------------------------------*/
