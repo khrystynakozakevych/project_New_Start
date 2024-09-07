@@ -1,4 +1,5 @@
 .catalog {
+  margin-top: 100px;
 }
 
 .catalog-title {
@@ -25,8 +26,7 @@
   flex-direction: column;
   align-items: center;
 }
-.catalog-picture {
-}
+
 .product-name {
   font-weight: 500;
   font-size: 16px;
