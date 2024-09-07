@@ -1,11 +1,11 @@
-.contact-us {
+.contact-us-container {
   margin-top: 60px;
 }
 
 .form-block {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  
   background-color: #f3f3f3;
   border-radius: 30px;
   padding: 48px 28px;
@@ -111,8 +111,8 @@
 
 .contact-section-image {
   border-radius: 30px;
-  width: 100%;
-  height: auto;
+
+
 }
 
 .contact-us-content {
@@ -124,9 +124,9 @@
 
 /* section contact-us tablet */
 @media screen and (min-width: 768px) {
-  .contact-us {
+   .contact-us-container {
     margin-top: 80px;
-    padding: 0 32px;
+  
   }
 
   .form-block {
@@ -166,21 +166,18 @@
     height: 52px;
   }
 
-  .contact-section-image {
-    border-radius: 50px;
-  }
+  
 
   .contact-section-image {
     border-radius: 50px;
-    max-width: 100%;
   }
 }
 
 /* section contact-us desktop */
 @media screen and (min-width: 1280px) {
-  .contact-us {
+   .contact-us-container {
     margin-top: 100px;
-    padding: 0 65px;
+    
   }
 
   .img-block {
@@ -195,10 +192,9 @@
   }
 
   .form-block {
-    border-radius: 50px;
+ 
     padding: 50px 60px;
-    width: 100%;
-    max-width: 550px;
+ 
     margin-bottom: 0;
   }
 }
