@@ -1,29 +1,100 @@
 .catalog {
 }
-.container {
-}
+
 .catalog-title {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 24px;
+  line-height: 1;
+  letter-spacing: -0.02em;
 }
-.container-list {
+.catalog-list {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(auto-fit);
   grid-column-gap: 0px;
   grid-row-gap: 20px;
+  justify-content: center;
+  width: 100%;
 }
-.container-item {
+.catalog-item {
+  padding: 24px 28px;
   border: 1px solid rgba(12, 12, 12, 0.05);
   background-color: #f3f3f3;
   border-radius: 30px;
-  max-width: 335px;
-  height: 364px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .catalog-picture {
-  background-color: #f3f3f3;
 }
 .product-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
 }
 .item-catalog-price {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 1.28;
+  color: rgba(12, 12, 12, 0.5);
 }
+.wrapper-catalog-text {
+  margin-top: 10px;
+  width: 100%;
+}
+
 .showmore-catalog-btn {
+  border-radius: 16px;
+  width: 160px;
+  height: 48px;
+  outline: none;
+  border: none;
+  background-color: #3350e9;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #fbfbfb;
+  margin: 40px auto 0px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .catalog-item:nth-child(n + 5) {
+    display: none;
+  }
+}
+
+/* media tablet ---------------------------------*/
+@media only screen and (min-width: 768px) {
+  .catalog-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 32px;
+  }
+  .showmore-catalog-btn {
+    display: none;
+  }
+  .catalog-item {
+    height: 414px;
+  }
+  .product-name {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+/* media desktop ---------------------------------*/
+@media only screen and (min-width: 1280px) {
+  .catalog-list {
+    grid-template-columns: repeat(3, 368px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 23px;
+    grid-row-gap: 32px;
+    margin-inline: auto;
+  }
+}
+.catalog-item {
 }
