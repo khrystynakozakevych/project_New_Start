@@ -145,6 +145,7 @@
 
 /* mobile menu */
 
+.svg-social-mobile-menu-header-tab,
 .svg-btn-mobile-menu-header-tbl {
   display: none;
 }
@@ -155,7 +156,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -188,11 +188,7 @@
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .mobile-menu-header-container {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../img/mobile-menu/beckground-menu-mob-2x.jpg);
+    background-image: url(../img/mobile-menu/beckground-menu-mob-2x.jpg);
   }
 }
 
@@ -269,16 +265,79 @@
 
 .svg-social-mobile-menu-header {
   fill: #fbfbfb;
+  opacity: 0.8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-social-mobile-menu-header:focus,
-.svg-social-mobile-menu-header:hover {
+.svg-social-mobile-menu-header:hover,
+.svg-social-mobile-menu-header:focus {
   fill: #fbfbfb;
+  opacity: 1;
 }
 
 @media only screen and (min-width: 1280px) {
   .mobile-menu-header {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu-header-container {
+    background-image: url(../img/mobile-menu/beckground-menu-tab.jpg);
+    max-width: 330px;
+    min-width: 330px;
+    padding-top: 330px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .mobile-menu-header-container {
+      background-image: url(../img/mobile-menu/beckground-menu-tab-2x.jpg);
+    }
+  }
+
+  .svg-btn-mobile-menu-header {
+    display: none;
+  }
+
+  .svg-btn-mobile-menu-header-tbl {
+    display: block;
+    fill: #fbfbfb;
+  }
+
+  .nav-mobile-menu-header {
+    margin: 0 128.5px auto;
+  }
+
+  .list-link-mobile-menu-header {
+    gap: 32px;
+  }
+
+  .social-mobile-menu-header {
+    margin: 0 101px;
+  }
+
+  .linl-social-mobile-menu-header {
+    width: 36px;
+    height: 36px;
+  }
+
+  .svg-social-mobile-menu-header {
+    display: none;
+  }
+
+  .svg-social-mobile-menu-header-tab {
+    display: block;
+    fill: #fbfbfb;
+    opacity: 0.8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .svg-social-mobile-menu-header-tab:hover,
+  .svg-social-mobile-menu-header-tab:focus {
+    fill: #fbfbfb;
+    opacity: 1;
   }
 }
