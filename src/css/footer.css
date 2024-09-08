@@ -23,6 +23,7 @@ address {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
+  padding-bottom: 4px;
 }
 
 .footer-socials {
@@ -41,7 +42,7 @@ address {
 }
 
 .footer-socials-icons {
-  fill: rgba(251, 251, 251, 0.5);
+  fill: #fbfbfb;
   border: 1px solid rgba(251, 251, 251, 0.1);
   border-radius: 10px;
   padding: 8px;
@@ -82,12 +83,9 @@ address {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.33;
-  gap: 49px;
   display: flex;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.33;
-  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .footer-nav-list {
@@ -101,6 +99,10 @@ address {
   margin-right: 0px;
   padding-bottom: 4px;
   width: 147px;
+}
+
+.footer-nav-list-item {
+  padding-bottom: 4px;
 }
 
 .footer-address {
@@ -122,6 +124,7 @@ address {
   border-top: 1px solid rgba(251, 251, 251, 0.1);
   padding-top: 24px;
   margin-top: 24px;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -159,8 +162,6 @@ address {
   .footer-navigation {
     font-size: 14px;
     line-height: 1.29;
-
-    width: 100%;
   }
   .footer-nav-list {
     column-gap: 19px;
@@ -173,7 +174,6 @@ address {
     flex-direction: row;
     font-size: 14px;
     line-height: 1.29;
-    gap: 159px;
     margin-top: 56px;
     padding-top: 28px;
     margin-top: 28px;
@@ -190,14 +190,8 @@ address {
   .footer-text {
     margin: -80px 307px 126px 306px;
   }
-  .footer-navigation {
-    gap: 469px;
-  }
   .footer-nav-list {
     width: 505px;
     column-gap: 40px;
-  }
-  .footer-info {
-    gap: 661px;
   }
 }
