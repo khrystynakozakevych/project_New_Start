@@ -1,4 +1,4 @@
-.about-us {
+.about-us-container {
     margin-top: 60px;
     margin-bottom: 0;
     display: flex;
@@ -57,7 +57,7 @@
     }
 
 @media screen and (min-width: 768px) {
-    .about-us {
+    .about-us-container {
         margin-top: 80px;
         display: flex;
         flex-wrap: wrap;
@@ -86,7 +86,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .about-us {
+    .about-us-container {
         margin-top: 100px;
         flex-wrap: nowrap;
     }
