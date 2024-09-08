@@ -36,7 +36,7 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: -0.02em;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .item-catalog-price {
   font-size: 14px;
@@ -92,6 +92,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  .purchase-text {
+    font-size: 22px;
+  }
 }
 /* media desktop ---------------------------------*/
 @media only screen and (min-width: 1280px) {
@@ -112,6 +115,11 @@
   transform: rotateY(179deg);
   z-index: 2;
 }
+.purchase-text {
+  letter-spacing: -0.02em;
+  line-height: 1.28;
+  color: rgba(12, 12, 12, 0.5);
+}
 .catalog-item:hover .wrapper-catalog-text {
   opacity: 0;
   transform-style: preserve-3d;
@@ -121,17 +129,17 @@
   opacity: 1;
 }
 .catalog-picture {
-  transform: perspective(2000px) translateY(20px) translateZ(50px);
+  transform: perspective(2000px) translateY(20px) translateZ(60px);
   transition: transform 0.8s ease-in-out, opacity 1s ease;
+  pointer-events: none;
+  perspective: inherit;
 }
 .wrapper-catalog-text {
-  text-align: center;
-  padding-top: 22px;
+  padding: 16px;
   width: 100%;
   transform: perspective(1000px) translateY(0) translateZ(60px);
   transition: transform 0.8s ease-in-out, opacity 1s ease;
   pointer-events: none;
-  width: 100%;
   perspective: inherit;
 }
 
@@ -139,13 +147,13 @@
   color: #fbfbfb;
   position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   left: 0;
-  top: 100px;
-  transform: perspective(1000px) rotateY(179deg) translateY(10px)
-    translateZ(90px);
+  top: 0;
+  transform: perspective(1000px) rotateY(180deg) translateY(10px)
+    translateZ(80px);
   opacity: 0;
   z-index: -1;
   transition: transform 0.8s ease-in-out, opacity 1s ease;
@@ -173,7 +181,7 @@
 
 .back-h2 {
   text-align: center;
-  font-size: 25px;
-  margin-top: 0;
+  font-size: 26px;
+  margin-top: 10px;
   color: #0c0c0c;
 }
