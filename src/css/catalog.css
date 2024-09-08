@@ -144,8 +144,8 @@
   flex-direction: column;
   left: 0;
   top: 100px;
-  transform: perspective(1000px) rotateY(179deg) translateY(20px)
-    translateZ(100px);
+  transform: perspective(1000px) rotateY(179deg) translateY(10px)
+    translateZ(90px);
   opacity: 0;
   z-index: -1;
   transition: transform 0.8s ease-in-out, opacity 1s ease;
@@ -154,25 +154,21 @@
 }
 .purchase-button-container .purchase-button {
   padding: 10px 40px;
-  border-radius: 50px;
+  border-radius: 16px;
   font-size: 1.2rem;
+  font-weight: 500;
+  width: 160px;
+  height: 48px;
+  margin-top: 40px;
+  line-height: 1.28;
   transition: background-color 0.25s ease, color 0.25s ease;
   cursor: pointer;
   border: none;
   background-color: #3350e9;
 }
-.purchase-button-container .purchase-button.light:hover {
-  background-color: rgba(51, 80, 233, 1);
-  color: #fbfbfb;
-}
-.purchase-button-container .purchase-button.dark:hover {
-  background-color: rgba(51, 80, 233, 1);
-  color: #272727;
-}
 
-.fa-solid {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+.purchase-button-container .purchase-button:hover {
+  background-color: #1f3cd4;
 }
 
 .back-h2 {
