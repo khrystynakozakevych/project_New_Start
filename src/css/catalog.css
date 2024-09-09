@@ -1,5 +1,5 @@
-.catalog {
-  margin-top: 100px;
+.catalog .container {
+  margin-top: 60px;
 }
 
 .catalog-title {
@@ -11,7 +11,7 @@
 }
 .catalog-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 335px;
   grid-column-gap: 0px;
   grid-row-gap: 20px;
   justify-content: center;
@@ -25,10 +25,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   perspective: 1000px;
   transform: perspective(1000px) translateY(0);
   transform-style: preserve-3d;
   transition: transform 0.8s ease-in-out;
+  min-height: 364px;
 }
 
 .product-name {
@@ -103,6 +105,13 @@
   .purchase-text {
     font-size: 22px;
   }
+  .catalog-title {
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
+  .catalog .container {
+    margin-top: 80px;
+  }
 }
 /* media desktop ---------------------------------*/
 @media only screen and (min-width: 1280px) {
@@ -115,6 +124,9 @@
   }
   .catalog-item {
     padding: 24px 32px;
+  }
+  .catalog .container {
+    margin-top: 100px;
   }
 }
 
@@ -137,7 +149,7 @@
   opacity: 1;
 }
 .catalog-picture {
-  transform: perspective(2000px) translateY(20px) translateZ(60px);
+  transform: perspective(2000px) translateY(0px) translateZ(30px);
   transition: transform 0.8s ease-in-out, opacity 1s ease;
   pointer-events: none;
   perspective: inherit;
@@ -145,7 +157,8 @@
 .wrapper-catalog-text {
   padding: 16px;
   width: 100%;
-  transform: perspective(1000px) translateY(0) translateZ(60px);
+  transform: perspective(1000px) translateY(-3px) translateX(-4px)
+    translateZ(40px);
   transition: transform 0.8s ease-in-out, opacity 1s ease;
   pointer-events: none;
   perspective: inherit;
