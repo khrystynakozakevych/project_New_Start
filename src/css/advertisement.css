@@ -1,14 +1,17 @@
 .advertisement-container {
-  background-image: url(/project_New_Start/src/img/advertisement/adv-desc.jpg);
+  margin-top: 100px;
+}
+.advertisement-row {
+  background-image: linear-gradient(
+      rgba(012, 012, 012, 0.85),
+      rgba(012, 012, 012, 0.85)
+    ),
+    url(/project_New_Start/src/img/advertisement/adv-desc.jpg);
   border-radius: 30px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
-  background-color: rgba(012, 012, 012, 0.85);
   background-blend-mode: multiply;
-}
-.advertisement-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,7 +19,6 @@
 }
 .advertisement-text {
   display: block;
-  font-family: Gilroy;
   font-weight: 600;
   font-size: 48px;
   line-height: 44px;
@@ -24,6 +26,7 @@
   color: white;
   max-width: 690px;
   font-style: normal;
+  min-width: 279px;
 }
 .visually-hidden {
   position: absolute;
@@ -64,7 +67,7 @@
   background: #fbfbfb;
 }
 
-@media (max-width: 1158px) {
+@media (max-width: 1280px) {
   .advertisement-row {
     display: flex;
     flex-direction: column;
@@ -78,7 +81,6 @@
 }
 @media (max-width: 768px) {
   .advertisement-text {
-    font-family: Gilroy;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
