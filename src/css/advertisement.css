@@ -1,0 +1,80 @@
+.advertisement-container {
+  background-image: url(/project_New_Start/src/img/advertisement/adv-desc.jpg);
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-color: rgba(012, 012, 012, 0.85);
+  background-blend-mode: multiply;
+}
+.advertisement-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px;
+}
+.advertisement-title {
+  display: block;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 44px;
+  letter-spacing: -0.96px;
+  color: white;
+
+  max-width: 690px;
+  font-style: normal;
+}
+.advertisement-span {
+  color: rgba(251, 251, 251, 0.5);
+}
+.advertisement-button {
+  display: block;
+  color: #fbfbfb;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  border-radius: 16px;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  padding: 15px 0;
+  height: 100%;
+  min-width: 160px;
+}
+.advertisement-button:hover,
+.advertisement-button:focus {
+  color: #0c0c0c;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  background: #fbfbfb;
+}
+
+@media (max-width: 1158px) {
+  .advertisement-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 80px 64px;
+  }
+  .advertisement-button {
+    width: 160px;
+  }
+}
+@media (max-width: 768px) {
+  .advertisement-title {
+    font-family: Gilroy;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 100% */
+    letter-spacing: -0.64px;
+  }
+  .advertisement-row {
+    gap: 28px;
+    padding: 60px 0;
+  }
+}
