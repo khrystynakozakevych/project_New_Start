@@ -182,7 +182,7 @@
 
 .btn-mobile-menu-header {
   padding: 0;
-  /* border: transparent; */
+  border: transparent;
   background-color: transparent;
   position: absolute;
   top: 20px;
@@ -191,7 +191,7 @@
 
 .svg-btn-mobile-menu-header {
   display: block;
-  fill: #fbfbfb;
+  stroke: #fbfbfb;
 }
 
 .nav-mobile-menu-header {
