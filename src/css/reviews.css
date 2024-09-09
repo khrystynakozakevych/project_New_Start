@@ -1,5 +1,5 @@
-.review {
-  margin-top: 100px;
+.review .container {
+  margin-top: 60px;
 }
 
 .review-title {
@@ -62,6 +62,9 @@
     line-height: 0.92;
     font-size: 48px;
   }
+  .review .container {
+    margin-top: 80px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -75,5 +78,8 @@
   .author-qoute {
     font-size: 16px;
     line-height: 1.25;
+  }
+  .review .container {
+    margin-top: 100px;
   }
 }
