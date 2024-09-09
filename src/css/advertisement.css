@@ -14,7 +14,7 @@
   justify-content: space-between;
   padding: 80px;
 }
-.advertisement-title {
+.advertisement-text {
   display: block;
   font-family: Gilroy;
   font-weight: 600;
@@ -22,9 +22,21 @@
   line-height: 44px;
   letter-spacing: -0.96px;
   color: white;
-
   max-width: 690px;
   font-style: normal;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .advertisement-span {
   color: rgba(251, 251, 251, 0.5);
