@@ -2,11 +2,8 @@
   margin-top: 100px;
 }
 .advertisement-row {
-  background-image: linear-gradient(
-      rgba(012, 012, 012, 0.85),
-      rgba(012, 012, 012, 0.85)
-    ),
-    url(/project_New_Start/src/img/advertisement/adv-desc.jpg);
+  background-image: url(/project_New_Start/src/img/advertisement/adv-desc.jpg);
+  background-color: rgba(012, 012, 012, 0.85);
   border-radius: 30px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,6 +13,13 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 80px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .advertisement-row {
+    background-image: url(/project_New_Start/src/img/advertisement/adv-desc-2x.jpg);
+  }
 }
 .advertisement-text {
   display: block;
@@ -58,6 +62,7 @@
   padding: 15px 0;
   height: 100%;
   min-width: 160px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .advertisement-button:hover,
 .advertisement-button:focus {
@@ -67,7 +72,10 @@
   background: #fbfbfb;
 }
 
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
+  .advertisement-container {
+    margin-top: 80px;
+  }
   .advertisement-row {
     display: flex;
     flex-direction: column;
@@ -79,7 +87,10 @@
     width: 160px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .advertisement-container {
+    margin-top: 60px;
+  }
   .advertisement-text {
     font-size: 32px;
     font-style: normal;
@@ -89,6 +100,6 @@
   }
   .advertisement-row {
     gap: 28px;
-    padding: 60px 0;
+    padding: 60px 20px;
   }
 }
