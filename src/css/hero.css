@@ -2,12 +2,6 @@
   padding: 60px 0;
 }
 
-.hero-container {
-}
-
-.container {
-}
-
 .hero-title {
   font-weight: 600;
   font-size: 40px;
@@ -48,9 +42,6 @@
 .hero-list-img {
   width: 44px;
   height: 44px;
-}
-
-.hero-icons {
 }
 
 .hero-btn {
@@ -146,8 +137,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .hero {
-    padding-bottom: 100px;
+  .hero-container {
+    margin-top: 100px;
   }
 
   .hero-box {
