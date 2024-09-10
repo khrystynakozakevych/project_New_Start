@@ -158,7 +158,7 @@
   .mobile-menu-header-container {
     margin: 0 0 0 auto;
     background-color: #0c0c0c;
-    background-image: url(../img/mobile-menu/beckground-menu-mob.jpg);
+    background-image: url(/img/mobile-menu/beckground-menu-mob.jpg);
     background-repeat: no-repeat;
     max-width: 200px;
     min-width: 200px;
@@ -176,7 +176,7 @@
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
     .mobile-menu-header-container {
-      background-image: url(../img/mobile-menu/beckground-menu-mob-2x.jpg);
+      background-image: url(/img/mobile-menu/beckground-menu-mob-2x.jpg);
     }
   }
   
@@ -271,7 +271,7 @@
   
   @media only screen and (min-width: 768px) {
     .mobile-menu-header-container {
-      background-image: url(../img/mobile-menu/beckground-menu-tab.jpg);
+      background-image: url(/img/mobile-menu/beckground-menu-tab.jpg);
       max-width: 330px;
       min-width: 330px;
       padding-top: 330px;
@@ -282,7 +282,7 @@
       (min-resolution: 2dppx),
       (min-resolution: 192dpi) {
       .mobile-menu-header-container {
-        background-image: url(../img/mobile-menu/beckground-menu-tab-2x.jpg);
+        background-image: url(/img/mobile-menu/beckground-menu-tab-2x.jpg);
       }
     }
   
