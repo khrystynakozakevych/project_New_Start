@@ -19,7 +19,6 @@ address {
 }
 
 .footer-logo {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
@@ -59,7 +58,7 @@ address {
 .footer-contact {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.33333;
+  line-height: 1.33;
   text-transform: uppercase;
   text-align: center;
   border-radius: 10px;
@@ -69,7 +68,6 @@ address {
 }
 
 .footer-text {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -94,6 +92,7 @@ address {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
+  column-gap: 16px;
   column-gap: 16px;
   row-gap: 8px;
   margin-right: 0px;
@@ -129,6 +128,7 @@ address {
 }
 
 .terms {
+  margin-right: 20px;
   margin-right: 20px;
 }
 
