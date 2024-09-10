@@ -11,7 +11,7 @@
 }
 .catalog-list {
   display: grid;
-  grid-template-columns: 335px;
+  grid-template-columns: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 20px;
   justify-content: center;
@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   perspective: 1000px;
   transform: perspective(1000px) translateY(0);
   transform-style: preserve-3d;
@@ -136,6 +136,7 @@
   z-index: 2;
 }
 .purchase-text {
+  height: 100%;
   letter-spacing: -0.02em;
   line-height: 1.28;
   color: rgba(12, 12, 12, 0.5);
@@ -204,5 +205,6 @@
   text-align: center;
   font-size: 26px;
   margin-top: 16px;
+  margin-bottom: 16px;
   color: #0c0c0c;
 }
