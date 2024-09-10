@@ -77,8 +77,31 @@
 .back {
   transform: rotateY(180deg);
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.back-watch-text {
+  height: 100%;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 1.28;
+  color: rgba(12, 12, 12, 0.5);
+}
+
+.name-purchase-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-watch-name {
+  text-align: center;
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #0c0c0c;
 }
 
 .purchase-btn {
@@ -273,6 +296,14 @@
   .sale-quality-text {
     font-size: 14px; 
     line-height: 1.29;
+  }
+
+  .back-watch-text {
+    font-size: 16px;
+  }
+
+  .back-watch-name {
+    font-size: 26px;
   }
   
 }

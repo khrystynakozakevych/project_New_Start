@@ -100,7 +100,7 @@
   .link-header::after {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 40%;
     top: 20px;
     border-radius: 100%;
     background-color: #3350e9;
@@ -125,38 +125,6 @@
   .link-header.active-home {
     color: #3350e9;
   }
-
-
-/* .nav-list-link::after {
-    content: "";
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    background-color: #404bbf;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-
-    opacity: 0;
-
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .nav-list-link:hover:after,
-  .nav-list-link:focus:after,
-  .nav-list-link.current::after {
-    opacity: 1;
-  }
-
-  .nav-list-link:hover,
-  .nav-list-link:focus,
-  .contacts-list-link:hover,
-  .contacts-list-link:focus,
-  .nav-list-link.current {
-    color: #404bbf;
-  } */
 
   .social-header {
     display: block;
