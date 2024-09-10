@@ -1,7 +1,6 @@
 .sale-section {
   padding: 0px 20px;
-  max-width: 375px;
-  height: 1122px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -22,9 +21,10 @@
 
 .sale-list {
   display: flex;
-
   flex-direction: row;
-  gap: 5px;
+  /* gap: 5px; */
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .sale-list-item {
@@ -33,7 +33,9 @@
   width: 80px;
   height: 80px;
   background: #f3f3f3;
-  padding: 13px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sale-container-big-clock {
@@ -42,8 +44,9 @@
   width: 100%;
   height: 385px;
   background: #f3f3f3;
-  padding: 50px;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sale-description {
