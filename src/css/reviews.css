@@ -1,93 +1,85 @@
-
-.container {
-  max-width: 320px;
-  padding: 0 16px;
-  margin: 0 auto;
-} 
-
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+.review .container {
+  margin-top: 60px;
 }
 
-@media only screen and (min-width: 1158px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 15px;
-  }
-}
-
-.reviews-border-card {  border: 1px solid #0c0c0c
-  ;
-border-radius: 20px;}
-.reviews-section { 
- 
-}
-.reviews-title {
-  font-family: 'Gilroy', sans-serif;
+.review-title {
+  font-weight: 600;
   font-size: 32px;
+  margin-bottom: 24px;
+
   line-height: 1;
   letter-spacing: -0.02em;
   color: #0c0c0c;
-  margin-bottom: 24px;
 }
-.reviews-container {
+.review-list {
+  display: grid;
+  grid-template-columns: 1fr;
 
-
+  justify-content: center;
 }
-.reviews-list { display: flex;
-  gap:20px;
-  
-}
-.reviews-item { 
-
-  border: #0c0c0c;
+.review-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 36px;
+  border-radius: 30px;
   background-color: #f3f3f3;
-
- 
-}
-.reviews-photo {
-    margin-bottom: 24px; 
-    max-width: 100%; 
-    height: auto;
-
-}
-.reviews-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
   text-align: center;
-  color: #0c0c0c;
+  font-weight: 500;
+}
+
+.author-name {
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-top: 24px;
   margin-bottom: 8px;
 }
-.reviews-text {
-  font-weight: 500;
+.author-qoute {
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
-  text-align: center;
   color: rgba(12, 12, 12, 0.4);
 }
 
-@media only screen and (min-width: 768px) {
-  
- 
-
-  .reviews-name {
-    font-size: 18px;
-    line-height: 1.1;
-  }
-
-  .reviews-text {
-    font-size: 16px;
-    line-height: 1.25;
+@media screen and (max-width: 768px) {
+  .review-items:nth-child(n + 2) {
+    display: none;
   }
 }
 
-@media only screen and (min-width: 1128px) {
-  
+@media only screen and (min-width: 768px) {
+  .review-items:nth-child(n + 3) {
+    display: none;
+  }
+  .review-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 0px;
+  }
+  .review-title {
+    line-height: 0.92;
+    font-size: 48px;
+  }
+  .review .container {
+    margin-top: 80px;
+  }
+}
 
-  
+@media only screen and (min-width: 1280px) {
+  .review-items:nth-child(n + 3) {
+    display: flex;
+  }
+  .review-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+  }
+  .author-qoute {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .review .container {
+    margin-top: 100px;
+  }
 }
