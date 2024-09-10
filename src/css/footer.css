@@ -2,12 +2,12 @@ address {
   font-style: normal;
 }
 
-.footer {
-  margin: 60px 20px 20px 20px;
-  max-width: 1280px;
+.container-footer {
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
-.container-footer {
+.footer-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -133,10 +133,11 @@ address {
 }
 
 @media (min-width: 768px) {
-  .footer {
-    margin: 80px 32px 32px 32px;
-  }
   .container-footer {
+    margin-top: 80px;
+    margin-bottom: 32px;
+  }
+  .footer-wrapper {
     padding: 40px 28px 20px 40px;
   }
   .footer-logo {
@@ -181,10 +182,11 @@ address {
 }
 
 @media (min-width: 1280px) {
-  .footer {
-    margin: 100px 32px 32px 32px;
-  }
   .container-footer {
+    margin-top: 100px;
+    margin-bottom: 32px;
+  }
+  .footer-wrapper {
     padding: 40px 40px 28px 40px;
   }
   .footer-text {
