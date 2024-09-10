@@ -42,7 +42,7 @@
   color: rgba(12, 12, 12, 0.4);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .review-items:nth-child(n + 2) {
     display: none;
   }
