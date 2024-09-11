@@ -1,28 +1,34 @@
 .advertisement-container {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .advertisement-row {
-  background-image: linear-gradient(
-      rgba(012, 012, 012, 0.85),
-      rgba(012, 012, 012, 0.85)
-    ),
-    url(/project_New_Start/src/img/advertisement/adv-desc.jpg);
+  background-image: url(../img/advertisement/adv-mob.png);
+  background-color: rgba(012, 012, 012, 0.85);
   border-radius: 30px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 28px;
+  padding: 60px 28px;
   justify-content: space-between;
-  padding: 80px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .advertisement-row {
+    background-image: url(../img/advertisement/adv-mob-2x.png);
+  }
 }
 .advertisement-text {
   display: block;
+  font-size: 32px;
+  font-style: normal;
   font-weight: 600;
-  font-size: 48px;
-  line-height: 44px;
-  letter-spacing: -0.96px;
+  line-height: 32px; /* 100% */
+  letter-spacing: -0.64px;
   color: white;
   max-width: 690px;
   font-style: normal;
@@ -35,7 +41,6 @@
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -57,7 +62,8 @@
   border: 1px solid rgba(251, 251, 251, 0.15);
   padding: 15px 0;
   height: 100%;
-  min-width: 160px;
+  width: 160px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .advertisement-button:hover,
 .advertisement-button:focus {
@@ -67,28 +73,46 @@
   background: #fbfbfb;
 }
 
-@media (max-width: 1280px) {
-  .advertisement-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 32px;
-    padding: 80px 64px;
+@media screen and (min-width: 768px) {
+  .advertisement-container {
+    margin-top: 80px;
   }
-  .advertisement-button {
-    width: 160px;
+  .advertisement-row {
+    padding: 80px 64px;
+    gap: 32px;
+    background-image: url(../img/advertisement/adv-tab.png);
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .advertisement-row {
+      background-image: url(../img/advertisement/adv-tab-2x.png);
+    }
+  }
+  .advertisement-text {
+    font-size: 48px;
+    line-height: 44px;
+    letter-spacing: -0.96px;
   }
 }
-@media (max-width: 768px) {
-  .advertisement-text {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px; /* 100% */
-    letter-spacing: -0.64px;
+@media screen and (min-width: 1280px) {
+  .advertisement-container {
+    margin-top: 100px;
+  }
+
+  .advertisement-row {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 83px 80px;
   }
   .advertisement-row {
-    gap: 28px;
-    padding: 60px 0;
+    background-image: url(../img/advertisement/adv-desc.png);
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .advertisement-row {
+      background-image: url(../img/advertisement/adv-desc-2x.png);
+    }
   }
 }
