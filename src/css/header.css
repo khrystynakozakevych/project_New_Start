@@ -115,14 +115,12 @@
   }
 
   .link-header:hover:after,
-  .link-header:focus:after,
-  .link-header.active-home::after {
+  .link-header:focus:after {
     opacity: 1;
   }
 
   .link-header:hover,
-  .link-header:focus,
-  .link-header.active-home {
+  .link-header:focus {
     color: #3350e9;
   }
 
@@ -276,7 +274,7 @@
   gap: 10px;
 }
 
-.linl-social-mobile-menu-header {
+.link-social-mobile-menu-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,7 +343,7 @@
     margin: 0 101px;
   }
 
-  .linl-social-mobile-menu-header {
+  .link-social-mobile-menu-header {
     width: 36px;
     height: 36px;
   }
