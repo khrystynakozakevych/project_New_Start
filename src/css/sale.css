@@ -178,7 +178,6 @@
 .sale-quality {
   display: flex;
   flex-wrap: wrap;
-  min-width: 279px;
   flex-direction: row;
   gap: 8px;
 }
