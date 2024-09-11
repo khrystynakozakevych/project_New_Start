@@ -158,11 +158,17 @@
   margin-bottom: 20px;
 }
 
+.price {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
 .sale-discount-price {
   border-radius: 8px;
   background: rgba(251, 251, 251, 0.1);
   padding: 8px 12px;
-  margin-right: 9px;
   width: 68px;
   height: 32px;
   font-weight: 600;
@@ -177,9 +183,8 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
-  text-decoration: line-through;
   color: rgba(251, 251, 251, 0.5);
-  margin-bottom: 28px;
+  text-decoration: line-through;
 }
 
 .sale-desc-item {
@@ -275,7 +280,7 @@
     letter-spacing: -0.02em;
   }
   
-  .sale-price {
+  .price {
     margin-bottom: 30px;
   }
   
