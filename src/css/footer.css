@@ -53,6 +53,7 @@ address {
 .footer-socials-icons:hover,
 .footer-socials-icons:focus {
   opacity: 1;
+  border-color: rgba(251, 251, 251, 0.6);
 }
 
 .footer-contact {
